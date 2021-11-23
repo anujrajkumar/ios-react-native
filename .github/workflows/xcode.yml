@@ -41,11 +41,11 @@ jobs:
         -workspace ios/HelloReactNative.xcworkspace \
         -scheme HelloReactNative \
         clean archive \
-#         -sdk iphoneos \
-#         -configuration Debug \
-#         -UseModernBuildSystem=NO \
-#         -archivePath $PWD/HelloReactNative \
-#         CODE_SIGNING_ALLOWED=NO"
+        -sdk iphoneos \
+        -configuration Debug \
+        -UseModernBuildSystem=NO \
+        -archivePath $PWD/HelloReactNative \
+        CODE_SIGNING_ALLOWED=NO"
 
     - name: Compress .xcarchive
       run: zip -r -9 HelloReactNative.xcarchive.zip $PWD/HelloReactNative.xcarchive/
